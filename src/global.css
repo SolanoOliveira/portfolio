@@ -1,0 +1,22 @@
+/* global.css */
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem mais fina */
+}
+
+/* Estilizando a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #ccc; /* Cor da trilha (cinza mais escuro) */
+}
+
+/* Estilizando a alça (thumb) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #4d5057; /* Cor da alça */
+    border-radius: 12px; /* Deixa a alça redondinha */
+}
+
+/* Estilizando a alça (thumb) da barra de rolagem quando hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1e1f1e; /* Cor da alça quando hover (opcional) */
+}
