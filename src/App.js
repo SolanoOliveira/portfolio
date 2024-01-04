@@ -5,6 +5,7 @@ import Section2 from './Section2';
 import Section3 from './Section3';
 import Navbar from './Navbar';
 import AnimatedCursor from "react-animated-cursor"
+import Section4 from './Section4';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <Section2 />
       <Section3 />
+      <Section4/>
       <AnimatedCursor
   innerSize={20}
   outerSize={30}

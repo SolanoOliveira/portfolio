@@ -6,7 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { useSpring, animated } from 'react-spring';
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 
 const Home = () => {
   const [isRotated, setIsRotated] = useState(false);
@@ -33,8 +33,11 @@ const Home = () => {
           h2 {
             font-size: 40px;
           }
-          p {
-            font-size: 16px; /* Reduza o tamanho da fonte para celular */
+          div[data-aos="fade-right"] {
+            font-size: 18px;
+          }
+          p[data-aos="fade-left"] {
+            font-size: 16px;
           }
         }
       `}
@@ -47,7 +50,7 @@ const Home = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          paddingTop: '20px',
+          padding: '20px',
           position: 'relative',
         }}
       >
@@ -68,11 +71,10 @@ const Home = () => {
           src={foto}
           alt="Profile"
           style={{
-            maxWidth: '260px',
+            maxWidth: '200px', // Diminuído o maxWidth
             border: '3px solid white',
             borderRadius: '50%',
-            marginBottom: '20px',
-            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
+            margin: '10px 0',
             cursor: 'pointer',
             ...rotateAnimation,
           }}
@@ -115,18 +117,16 @@ const Home = () => {
           de superar barreiras e tornar o mundo mais acessível.
         </p>
         <div style={{ display: 'flex', alignItems: 'center' }} data-aos="fade-down">
-        <a href="https://github.com/SolanoOliveira" target="_blank" rel="noopener noreferrer">
-            {/* Adicione o link para o GitHub aqui */}
-            <GitHubIcon style={{ fontSize: '60px', color: '#4d5057', margin: '0 15px' }} />
+          <a href="https://github.com/SolanoOliveira" target="_blank" rel="noopener noreferrer" style={{ margin: '10px' }}>
+            <GitHubIcon style={{ fontSize: '60px', color: '#4d5057' }} />
           </a>
-          <a href="https://www.linkedin.com/in/solano-lima-oliveira-146b23188" target="_blank" rel="noopener noreferrer">
-            {/* Adicione o link para o LinkedIn aqui */}
-            <LinkedInIcon style={{ fontSize: '60px', color: '#4d5057', margin: '0 15px' }} />
+          <a href="https://www.linkedin.com/in/solano-lima-oliveira-146b23188" target="_blank" rel="noopener noreferrer" style={{ margin: '10px' }}>
+            <LinkedInIcon style={{ fontSize: '60px', color: '#4d5057' }} />
           </a>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }} data-aos="fade-down">
-        <a href="https://drive.google.com/file/d/1iB9-TUAeawFU-noCYQZCulfRdwdzTsdC/view?usp=drive_link" download="SeuCurriculo.pdf" style={{ textDecoration: 'none', marginTop: '20px' }}>
+          <a href="https://drive.google.com/file/d/1iB9-TUAeawFU-noCYQZCulfRdwdzTsdC/view?usp=drive_link" download="SeuCurriculo.pdf" style={{ textDecoration: 'none', marginTop: '20px' }}>
             <button style={{
               padding: '10px 20px',
               backgroundColor: ' #4d5057',

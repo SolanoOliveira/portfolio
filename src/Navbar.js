@@ -20,6 +20,9 @@ const Navbar = () => {
           <a className="nav-link" href="#section3">
             Educação
           </a>
+          <a className="nav-link" href="#section4">
+            Projetos
+          </a>
         </div>
       </div>
     </nav>
