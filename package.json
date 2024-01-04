@@ -1,5 +1,5 @@
 {
-  "homepage": "https://SolanoOliveira.github.io/solano-lima",
+  "homepage": "https://SolanoOliveira.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -58,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
