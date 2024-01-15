@@ -45,13 +45,14 @@ const Home = () => {
       <animated.section
         id="section1"
         style={{
-          height: '100vh',
+          height: '100vh', // Mantendo a altura para preencher a página
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
           padding: '20px',
           position: 'relative',
+          width: '100%', // Preencher toda a largura da tela
         }}
       >
         <div
@@ -80,31 +81,34 @@ const Home = () => {
           }}
           onClick={handleImageClick}
         />
-        <h2 data-aos="fade-up"
+        <h2
+          data-aos="fade-up"
           style={{
             fontFamily: "'Sacramento', cursive",
             color: '#4d5057',
-            fontSize: '60px',
+            fontSize: '40px', // Tamanho do texto reduzido
             marginBottom: '4px',
           }}
         >
           Solano Lima Oliveira
         </h2>
-        <div data-aos="fade-right"
+        <div
+          data-aos="fade-right"
           style={{
             fontFamily: "'Roboto Mono', monospace",
             fontWeight: '700',
-            fontSize: '24px',
+            fontSize: '18px', // Tamanho do texto reduzido
             color: ' #4d5057',
             marginBottom: '20px',
           }}
         >
           Desenvolvedor fullstack
         </div>
-        <p data-aos="fade-left"
+        <p
+          data-aos="fade-left"
           style={{
             fontFamily: "'Roboto Mono', monospace",
-            fontSize: '20px',
+            fontSize: '16px', // Tamanho do texto reduzido
             color: '#4d5057',
             lineHeight: '1.6',
             textAlign: 'center',
@@ -118,10 +122,10 @@ const Home = () => {
         </p>
         <div style={{ display: 'flex', alignItems: 'center' }} data-aos="fade-down">
           <a href="https://github.com/SolanoOliveira" target="_blank" rel="noopener noreferrer" style={{ margin: '10px' }}>
-            <GitHubIcon style={{ fontSize: '60px', color: '#4d5057' }} />
+            <GitHubIcon style={{ fontSize: '40px', color: '#4d5057' }} /> {/* Tamanho do ícone reduzido */}
           </a>
           <a href="https://www.linkedin.com/in/solano-lima-oliveira-146b23188" target="_blank" rel="noopener noreferrer" style={{ margin: '10px' }}>
-            <LinkedInIcon style={{ fontSize: '60px', color: '#4d5057' }} />
+            <LinkedInIcon style={{ fontSize: '40px', color: '#4d5057' }} /> {/* Tamanho do ícone reduzido */}
           </a>
         </div>
 

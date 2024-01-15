@@ -118,7 +118,7 @@ const Section3 = () => {
               <ul>
                 <li style={languageContentStyle}>Inglês avançado</li>
                 <li style={languageContentStyle}>Alemão iniciante</li>
-                <li style={languageContentStyle}>Libras português iniciante</li>
+                <li style={languageContentStyle}>Libras-português iniciante</li>
                 {/* ... Outros idiomas */}
               </ul>
             </div>
