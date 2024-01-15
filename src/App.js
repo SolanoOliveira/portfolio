@@ -6,12 +6,10 @@ import Section3 from './Section3';
 import Navbar from './Navbar';
 import AnimatedCursor from "react-animated-cursor"
 import Section4 from './Section4';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   return (
     <div className="App">
-      <SpeedInsights></SpeedInsights>
       <Navbar></Navbar>
       <Home />
       <Section2 />
