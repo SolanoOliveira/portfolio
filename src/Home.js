@@ -130,7 +130,7 @@ const Home = () => {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center' }} data-aos="fade-down">
-          <a href="https://drive.google.com/file/d/1iB9-TUAeawFU-noCYQZCulfRdwdzTsdC/view?usp=drive_link" download="SeuCurriculo.pdf" style={{ textDecoration: 'none', marginTop: '20px' }}>
+          <a href="https://drive.google.com/file/d/1VfmzvL99VxE3B2Q3tJh-EdlcXgf4_FeJ/view?usp=sharing" download="SeuCurriculo.pdf" style={{ textDecoration: 'none', marginTop: '20px' }}>
             <button style={{
               padding: '10px 20px',
               backgroundColor: ' #4d5057',
